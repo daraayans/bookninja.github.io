@@ -1,0 +1,15 @@
+section{
+    padding: 60px 0;
+}
+
+.serv a :hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+.accordion-body p a{
+    text-decoration: none;
+    color: white;
+}

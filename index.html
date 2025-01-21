@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Net Ninja</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    
+    <!-- navbar -->
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container-lg">
+                <a href="/" class="navbar-brand"><span class="fw-bold text-secondary"><i class="bi bi-book-half"></i> NetNinja Pro - The Book</span></a>
+
+                <!-- toggle button for mobile nav -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-expanded="false" aria-label="Toggle Navigation" >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+
+                <!-- navbar Itself -->
+                    <div class="collapse navbar-collapse justify-content-end align-items-center" id="main-nav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="#topic" class="nav-link">About the book</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="#reviews" class="nav-link">Reviews</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="#contact" class="nav-link">Get in Touch</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="#pricing" class="nav-link">Pricing</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav">
+                            <li class="nav-item ">
+                                <a href="login.html" class="nav-link btn bg-secondary text-light px-3 ">LOG IN</a>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+        </nav>
+
+
+
+        <!-- main image & intro text -->
+        <section>
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-5 text-center text-md-start">
+                        <h1>
+                            <div class="display-2">Black-Belt</div>
+                            <div class="display-5">Your Coding Skills</div>
+                        </h1>
+                        <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <a href="#pricing" class="btn btn-lg btn-secondary">Buy Now</a>
+
+                        <!-- open sidebar / offcanvas -->
+                         <div class="mt-3">
+                            <a href="#sidebar" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar" class="text-decoration-none" >Explore Other Books</a>
+                         </div>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="images/ebook-cover.png" alt="ebook-cover" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- offcanvas content -->
+            <div class="offcanvas offcanvas-start" id="sidebar" tabindex="-1" aria-labelledby="sidebar-label">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">My Other Books</h5>
+                    <button data-bs-dismiss="offcanvas" type="button" class="btn-close" aria-label="close"></button>
+                    
+                </div>
+                <div class="offcanvas-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed velit ab error cumque vel optio amet illum atque necessitatibus rem voluptates soluta dolor quisquam, ipsum deleniti ea nihil, in impedit.</p>
+
+                     <!-- dropdown -->
+                     <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="book-dropdown" data-bs-toggle="dropdown">
+                            Choose a Book Title
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="book-dropdown">
+                            <li><a href="#" class="dropdown-item">Becoming a Reactjs SuperHero</a></li>
+                            <li><a href="#" class="dropdown-item">Conquering Vue.js</a></li>
+                            <li><a href="#" class="dropdown-item">Levelling Up JavaScripts</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+
+    <!-- CARD -->
+    <!-- Pricing /subscription cost -->
+        <section id="pricing" class="bg-light">
+            <div class="container-lg">
+                <div class="text-center">
+                    <h2>Pricing Plan</h2>
+                    <p class="lead text-muted">Choose a Plan that suits you.</p>
+                </div>
+                <br>
+                <div class="row justify-content-center align-items-center g-0">
+                    <div class="col-8 col-lg-4 col-xxl-3">
+                        <div class="card border-0">
+                            <div class="card-body text-center py-4">
+                                <h4 class="card-title">Starter Edition</h4>
+                                <p class="lead">eBook download only</p>
+                                <p class="text-primary display-5 fw-bold">$12.99</p>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolor tenetur adipisci, qui distinctio quibusdam!</p>
+                                <a href="#" class="btn btn-primary mt-3 "> Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-8 col-lg-4">
+                        <div class="card border-1 border-primary">
+                            <div class="card-header text-center text-light bg-primary">Most Popular</div>
+                            <div class="card-body text-center py-4">
+                                <h4 class="card-title">Standard Edition</h4>
+                                <p class="lead">eBook download & all Updates</p>
+                                <p class="text-primary display-5 fw-bold">$18.99</p>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolor tenetur adipisci, qui distinctio quibusdam!</p>
+                                <button class="btn btn-primary" data-bs-target="#semodal" data-bs-toggle="modal" >BUY NOW</button>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-8 col-lg-4 col-xxl-3">
+                        <div class="card border-0">
+                            <div class="card-body text-center py-4">
+                                <h4 class="card-title">Ultimate Edition</h4>
+                                <p class="lead">eBook download & all Benefits</p>
+                                <p class="text-primary display-5 fw-bold">$24.99</p>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolor tenetur adipisci, qui distinctio quibusdam!</p>
+                                <a href="#" class="btn btn-primary mt-3 "> Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Standard Edition Modal -->
+         <div class="modal" id="semodal" aria-hidden="true" aria-labelledby="modal-title" tabindex="-1">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row py-3 ">
+                            <div class="col-11 col-lg-6 px-5">
+                                <h3>Get Premium</h3>
+                                <br>
+                                <div style="display: flex;">
+                                    <p class="me-2">Monthly</p>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                        <label class="form-check-label" for="flexSwitchCheckDefault">Annual</label>
+                                    </div>
+                                </div> 
+                                <h4>Payment Method</h4> 
+                                <br><br><br>
+
+                                <a href="#" class="text-decoration-none fw-bold fst-italic">Buying as a company?</a>
+                            </div>
+                            <div class="col-11 col-lg-6 pe-5">
+                                <div class="bg-light px-4 pt-4">
+                                    <div class="" style="font-size: 80%;">
+                                        <p class="fw-bold my-2">With Premium you get</p>
+                                        <p class="fw-bold my-2"><span class="text-success"><i class="bi bi-check-lg"></i></span> All Premium stock content</p>
+                                        <p class=" my-2"><span class="text-success"><i class="bi bi-check-lg"></i></span> Unlimited Downloads</p>
+                                        <p class=" my-2"><span class="text-success"><i class="bi bi-check-lg"></i></span> No attribution required</p>
+                                        <p class=" fw-bold my-2"><span class="text-success"><i class="bi bi-check-lg"></i></span> 18000 credits/month for AI creation and editing</p>
+                                        <p class=" my-2"><span class="text-success"><i class="bi bi-check-lg"></i></span> Commercial AI license     </p>
+                                        <p class=" my-2"><span class="text-success"><i class="bi bi-check-lg"></i></span> User-friendly online design tools</p>
+
+                                        <div class="mt-4">
+                                            <p class="fw-bold">Number of users</p>
+                                        </div>
+                                        <div class="mt-4">
+                                            <div class="row justify-content-around">
+                                                <div class="col">
+                                                    <p class="fw-bold">Month-to-month billing</p>
+                                                </div>
+                                                <div class="col text-end">
+                                                    <p style="font-size: 130%;">15.00 EUR/Month</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                  </div>
+                                    
+
+
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="accordion" id="payp">
+                                                <div class="accordion-item" style="border: 1px solid black;">
+                                                    <h2 class="accordion-header" id="1pay">
+                                                        <button class="accordion-button bg-light text-primary fw-bold" style="font-size:40%;" type="button" data-bs-toggle="collapse" data-bs-target="#sep" aria-expanded="true" aria-controls="sep">
+                                                           Add a promo code
+                                                        </button>
+                                                    </h2>
+                                                    <div class="collapse accordion-collapse" id="sep" aria-labelledby="1pay" data-bs-parent="#payp">
+                                                        <div class="accordion-body" >
+                                                           <div class="">
+                                                            <div class="row g-1">
+                                                                <div class="col-9">
+                                                                    <input type="text" name="pcode" id="pcode" required class="form-control ">
+                                                                </div>
+                                                                <div class="col-3">
+                                                                    <input type="submit" value="Apply" class="form-control  btn btn-secondary">
+                                                                </div>
+                                                            </div>
+                                                           </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>    
+                                        </div>  
+                                    </div>
+
+                                    <hr>
+                                    <div class="row justify-content-around">
+                                        <div class="col">
+                                            <p class="fw-bold text-muted">Charged Today</p>
+                                        </div>
+                                        <div class="col text-end">
+                                            <p style="font-size: 130%;" class="fw-bold">15.00 EUR</p>
+                                        </div>
+                                    </div>
+                                    <div class=" text-center">
+                                        <button class="btn btn-primary my-3 py-2 px-5" type="submit"><i class="bi bi-lock-fill"></i>Confirm and Pay</button>
+    
+                                    </div>
+                                   
+                                    <p style="font-size: 80%;">By clicking "Confirm and pay" you agree to our <a href="" class="text-decoration-none fw-bold">Terms of use.</a>  <br>    
+                                      <span class="fw-bold">Automatic monthly renewal: </span>  Your subscription will automatically renew every month <br>for a single payment of 15.00 EUR. <br>
+                                       <span class="fw-bold">Cancel:</span>  You can cancel your renewal anytime from <a href="" class="text-decoration-none fw-bold">Subscription > Plan.</a> </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+
+    <!-- about the book -->
+        <section id="topic">
+            <div class="container-md">
+                <div class="text-center">
+                    <h2>Inside the book</h2>
+                    <p class="lead text-muted">A quick glance at the topics you'll learn</p>
+                </div>
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-6 col-lg-4">
+                        <img src="images/kindle.png" alt="kindle" class="img-fluid">
+                    </div>
+
+                    <!-- accordion -->
+                    <div class="col-lg-6">
+                        <div class="accordion" id="chapters">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading-1">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-1" aria-expanded="true" aria-controls="chapter-1" >
+                                        <span class="fw-bold">Chapter 1</span> - Your first web Page
+                                    </button>
+                                </h2>
+                                <div id="chapter-1" class="collapse accordion-collapse" aria-labelledby="heading-1" data-bs-parent="#chapters">
+                                    <div class="accordion-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quod, assumenda veniam facilis neque architecto doloremque. Earum neque distinctio quas ducimus? Reiciendis nulla voluptatibus voluptate aut illum minima nisi molestiae.</p>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus neque dignissimos non ab natus reiciendis deleniti! Sapiente minus nostrum dolorem veniam in vitae inventore consectetur dolorum itaque? Magni, nemo ipsam.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                             <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading-2">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-2" aria-expanded="false" aria-controls="chapter-2" >
+                                        <span class="fw-bold">Chapter 2</span> - Mastering CSS
+                                    </button>
+                                </h2>
+                                <div id="chapter-2" class="collapse accordion-collapse" aria-labelledby="heading-2" data-bs-parent="#chapters">
+                                    <div class="accordion-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quod, assumenda veniam facilis neque architecto doloremque. Earum neque distinctio quas ducimus? Reiciendis nulla voluptatibus voluptate aut illum minima nisi molestiae.</p>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus neque dignissimos non ab natus reiciendis deleniti! Sapiente minus nostrum dolorem veniam in vitae inventore consectetur dolorum itaque? Magni, nemo ipsam.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading-3">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-3" aria-expanded="false" aria-controls="chapter-3" >
+                                        <span class="fw-bold">Chapter 3</span> - The Power of JavaScripts
+                                    </button>
+                                </h2>
+                                <div id="chapter-3" class="collapse accordion-collapse" aria-labelledby="heading-3" data-bs-parent="#chapters">
+                                    <div class="accordion-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quod, assumenda veniam facilis neque architecto doloremque. Earum neque distinctio quas ducimus? Reiciendis nulla voluptatibus voluptate aut illum minima nisi molestiae.</p>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus neque dignissimos non ab natus reiciendis deleniti! Sapiente minus nostrum dolorem veniam in vitae inventore consectetur dolorum itaque? Magni, nemo ipsam.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading-4">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-4" aria-expanded="false" aria-controls="chapter-4" >
+                                        <span class="fw-bold">Chapter 4</span> - Storing Data
+                                    </button>
+                                </h2>
+                                <div id="chapter-4" class="collapse accordion-collapse" aria-labelledby="heading-4" data-bs-parent="#chapters">
+                                    <div class="accordion-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quod, assumenda veniam facilis neque architecto doloremque. Earum neque distinctio quas ducimus? Reiciendis nulla voluptatibus voluptate aut illum minima nisi molestiae.</p>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus neque dignissimos non ab natus reiciendis deleniti! Sapiente minus nostrum dolorem veniam in vitae inventore consectetur dolorum itaque? Magni, nemo ipsam.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading-5">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-5" aria-expanded="false" aria-controls="chapter-5" >
+                                        <span class="fw-bold">Chapter 5</span> - User Authentication
+                                    </button>
+                                </h2>
+                                <div id="chapter-5" class="collapse accordion-collapse" aria-labelledby="heading-5" data-bs-parent="#chapters">
+                                    <div class="accordion-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quod, assumenda veniam facilis neque architecto doloremque. Earum neque distinctio quas ducimus? Reiciendis nulla voluptatibus voluptate aut illum minima nisi molestiae.</p>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus neque dignissimos non ab natus reiciendis deleniti! Sapiente minus nostrum dolorem veniam in vitae inventore consectetur dolorum itaque? Magni, nemo ipsam.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Reviews -->
+            <section id="reviews" class="bg-light">
+                <div class="container-lg">
+                    <div class="text-center">
+                        <h2><i class="bi bi-stars text-warning"></i> Book Reviews</h2>
+                        <p class="lead">What my students have said about the book...</p>
+                    </div>
+                    
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="list-group">
+                                <div class="list-group-items py-3">
+                                    <div>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                    <h5>A must buy for every aspiring web-dev</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dignissimos nam tempora ut vitae magni eius fuga, non nostrum obcaecati, repellat quis nulla dolore nihil quae nisi blanditiis? Quo, cum.</p>
+                                    <small class="fst-italic">Review by Olu</small>
+                                </div>
+
+                                <div class="list-group-items py-3">
+                                    <div>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                    <h5>Every Man's Dream in a Book </h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dignissimos nam tempora ut vitae magni eius fuga, non nostrum obcaecati, repellat quis nulla dolore nihil quae nisi blanditiis? Quo, cum.</p>
+                                    <small class="fst-italic">Review by Oluwadarasimi</small>
+                                </div>
+
+                                <div class="list-group-items py-3">
+                                    <div>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                    <h5>Don't Snooze or You Lose </h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dignissimos nam tempora ut vitae magni eius fuga, non nostrum obcaecati, repellat quis nulla dolore nihil quae nisi blanditiis? Quo, cum.</p>
+                                    <small class="fst-italic">Review by Peniel</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+    <!-- contact form -->
+        <section id="contact">
+            <div class="container-lg">
+                <div class="text-center">
+                    <h2>Get in Touch</h2>
+                    <p class="lead">Questions to ask? Fill out the form to contact me directly...</p>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-8 col-lg-6">
+                        <form action="">
+                            <label for="email" class="form-label">Email Address</label>
+                            <div class="input-group mb-4">
+                                <span class="input-group-text"><i class="bi bi-envelope-at-fill"></i></span>
+                                <input type="email" id="email" name="email" placeholder="netninja@example.com" class="form-control">
+                            </div>
+
+                            <label for="fullName" class="form-label">Full Name</label>
+                            <div class="input-group mb-4">
+                                <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
+                                <input type="text" id="fullName" name="fullName" placeholder="Net Ninja" class="form-control">
+                            </div>
+
+                            <label for="subject" class="form-label"> What is your Question About?</label>
+                            <div class="input-group mb-4">
+                                <span class="input-group-text"><i class="bi bi-chat-left-dots-fill"></i></span>
+                                <select name="subject" id="subject" class="form-select">
+                                    <option value="pricing">Pricing Query</option>
+                                    <option value="content">Content Query</option>
+                                    <option value="other">Other Query</option>
+                                </select>
+                            </div>
+
+                            <div class="form-floating mb-4">
+                                <textarea name="query" id="query" class="form-control" style="height: 240px;"></textarea>
+                                <label for="query">Your Query....</label>
+                            </div>
+
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-lg btn-outline-secondary">Submit</button>
+                            </div>
+                        
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- modal trigger -->
+            <section class="bg-light">
+                <div class="container">
+                    <div class="text-center">
+                        <h2>Stay In The Loop</h2>
+                        <p class="lead">Get the latest updatess as they happen...</p>
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 text-center">
+                            <p class="text-muted my-4">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa pariatur atque amet blanditiis ad? Repellendus deserunt expedita, beatae illo ipsum laborum harum architecto nostrum accusantium quas voluptatibus, ipsa fuga alias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, doloribus!
+                            </p>
+                            <button class="btn btn-primary" data-bs-target="#reg-modal" data-bs-toggle="modal" >Register for Updates</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        <!-- Modal Itself -->
+            <div class="modal" id="reg-modal" aria-hidden="true" aria-labelledby="modal-title" tabindex="-1" >
+                <div class="modal-dialog ">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Get the Latest Updates...</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, fugiat quasi! Necessitatibus culpa deserunt porro debitis ad eos, adipisci officia eaque magnam iure consequuntur repellat earum. Quo odit doloribus eos.</p>
+                            <label for="modal-email" class="form-label">Your Email Address</label>
+                            <input type="email" name="modal-email" id="modal-email" placeholder="netninja@example.com" class="form-control">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" role="button" class="btn btn-secondary"> Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- tabs -->
+                <div class="container">
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <button class="nav-link" id="nav-news-tab" data-bs-toggle="tab" data-bs-target="#nav-news" type="button" role="tab" aria-controls="nav-news" aria-selected="true">EA News</button>
+                            <button class="nav-link" id="nav-games-tab" data-bs-toggle="tab" data-bs-target="#nav-games" type="button" role="tab" aria-controls="nav-games" aria-selected="false">EA Games</button>
+                            <button class="nav-link" id="nav-sports-tab" data-bs-toggle="tab" data-bs-target="#nav-sports" type="button" role="tab" aria-controls="nav-sports" aria-selected="false">EA Sports FC</button>
+                        </div>
+                    </nav>
+
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade p-3" id="nav-news" role="tabpanel" aria-labelledby="nav-news-tab">
+                            <h2>EA News</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus aut voluptatem velit rem exercitationem adipisci explicabo necessitatibus eaque perferendis facere in voluptates soluta labore saepe mollitia quae nihil, earum beatae!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ipsum optio rem, culpa, at veniam consectetur esse possimus dolore similique blanditiis aperiam debitis facere aut laudantium alias accusamus temporibus nobis?</p>
+                        </div>
+
+                        <div class="tab-pane fade p-3" id="nav-games" role="tabpanel" aria-labelledby="nav-games-tab">
+                            <h2>EA Games</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus aut voluptatem velit rem exercitationem adipisci explicabo necessitatibus eaque perferendis facere in voluptates soluta labore saepe mollitia quae nihil, earum beatae!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ipsum optio rem, culpa, at veniam consectetur esse possimus dolore similique blanditiis aperiam debitis facere aut laudantium alias accusamus temporibus nobis?</p>
+                        </div>
+
+                        <div class="tab-pane fade p-3" id="nav-sports" role="tabpanel" aria-labelledby="nav-sports-tab">
+                            <h2>EA Sport FC</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus aut voluptatem velit rem exercitationem adipisci explicabo necessitatibus eaque perferendis facere in voluptates soluta labore saepe mollitia quae nihil, earum beatae!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ipsum optio rem, culpa, at veniam consectetur esse possimus dolore similique blanditiis aperiam debitis facere aut laudantium alias accusamus temporibus nobis?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <br><br><br>
+
+                <section>
+                    <div class="container-fluid">
+                        <div class="text-center">
+                            <h3 class="display-6 fw-bold">Seamless Delivery Services</h3>
+                        </div>
+                        <br><div class="row justify-content-center align-items-center">
+                            <div class="col-md-6 col-lg-3">
+                                <div class="card serv">
+                                    <a href="" class="text-decoration-none text-black ">
+                                        <div class="card-body">
+                                            <h4 class="card-title display-5 pt-4"><i class="bi bi-archive"></i></h4>
+                                            <p class="card-subtitle h5 py-4">Ship Now</p>
+                                            <p class="card-text pb-3">Request Pick Up, Delivery or Xpress Drop Off</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-md-6 col-lg-3">
+                                <div class="card serv">
+                                    <a href="" class="text-decoration-none text-black">
+                                        <div class="card-body ">
+                                            <h4 class="card-title display-5 pt-2"><i class="bi bi-globe"></i></i></h4>
+                                            <p class="card-subtitle h5 py-4">Overseas Shipping</p>
+                                            <p class="card-text pb-2">Ship from Uk, USA, Canada or China to Nigeria and Export to 230 locations worldwide</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-md-6 col-lg-3">
+                                <div class="card serv">
+                                    <a href="" class="text-decoration-none text-black">
+                                        <div class="card-body ">
+                                            <h4 class="card-title display-5 pt-4"><i class="bi bi-journal-text"></i></h4>
+                                            <p class="card-subtitle h5 py-4">Get a Quick Qoute</p>
+                                            <p class="card-text pb-3">Calculate cost estimate for local & international shipments</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-md-6 col-lg-3">
+                                <div class="card serv">
+                                    <a href="" class="text-decoration-none text-black">
+                                        <div class="card-body ">
+                                            <h4 class="card-title display-5 pt-4"><i class="bi bi-cart4"></i></i></h4>
+                                            <p class="card-subtitle h5 py-4">Personal Shopper</p>
+                                            <p class="card-text pb-3">We shop quality products for you & shp too your doorstep</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </section>
+
+                <section class=" text-light py-5" style="background-color: black;">
+                    <div class="container-fluid">
+                        <div class="row justify-content-around align-items-center">
+                            <div class="col-md-5">
+                                <div class="">
+                                    <h2>GIGGo, the app for local <br> and International <br> shipping</h2>
+                                    <br>
+                                    <div class="row align-items-start mb-5 mb-md-none">
+                                        <div class="col-lg-5 col-4">
+                                            <img src="images/appstore.png" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="col-lg-5 col-4">
+                                            <img src="images/googleplay.png" alt="" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="">
+                                    <img src="images/app-screen (1).png" alt=""  class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <br><br><br>    
+                
+            <!-- Footer -->
+                <footer class="">
+                    <div class="container-fluid py-5" style="background-color: black;">
+
+                        <!-- mobile screen topfoot -->
+                        <div class="row d-md-none">
+                            <div class="col">
+                                <div class="accordion" id="accfoot">
+                                    <div class="accordion-item" style="border: 1px solid black;">
+                                        <h2 class="accordion-header" id="1foot" style="border: 1px solid black;">
+                                            <button class="accordion-button" style="background-color: black; color: white;" type="button" data-bs-toggle="collapse" data-bs-target="#tools" aria-expanded="true" aria-controls="tools">
+                                                TOOLS
+                                            </button>
+                                        </h2>
+                                        <div class="collapse accordion-collapse" id="tools" aria-labelledby="1foot" data-bs-parent="#accfoot">
+                                            <div class="accordion-body" style="background-color: black;">
+                                                <p><a href="#">Ai Image Generator</a></p>
+                                                <p><a href="#">Ai Video Generator</a></p>
+                                                <p><a href="#">Image upscaler</a></p>
+                                                <p><a href="#">Background Remover</a></p>
+                                                <p><a href="#">Photo editor</a></p>
+                                                <p><a href="#">All Freepik tools</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item"  style="border: 1px solid black;">
+                                        <h2 class="accordion-header " id="2foot" style="border: 1px solid black;">
+                                            <button class="accordion-button" style="background-color: black; color: white;" type="button" data-bs-toggle="collapse" data-bs-target="#info" aria-expanded="true" aria-controls="info">
+                                                INFORMATION
+                                            </button>
+                                        </h2>
+                                        <div class="collapse accordion-collapse" id="info" aria-labelledby="2foot" data-bs-parent="#accfoot">
+                                            <div class="accordion-body" style="background-color: black;">
+                                                <p><a href="#">Pricing</a></p>
+                                                <p><a href="#">About us</a></p>
+                                                <p><a href="#">API</a></p>
+                                                <p><a href="#">Jobs</a></p>
+                                                <p><a href="#">Sell content</a></p>
+                                                <p><a href="#">Freepik brand guidelines</a></p>
+                                                <p><a href="#">Events</a></p>
+                                                <p><a href="#">Search trends</a></p>
+                                                <p><a href="#">Blog</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item" style="border: 1px solid black;">
+                                        <h2 class="accordion-header " id="3foot" >
+                                            <button class="accordion-button" style="background-color: black; color: white;" type="button" data-bs-toggle="collapse" data-bs-target="#legal" aria-expanded="true" aria-controls="legal">
+                                                LEGAL
+                                            </button>
+                                        </h2>
+                                        <div class="collapse accordion-collapse" id="legal" aria-labelledby="3foot" data-bs-parent="#accfoot">
+                                            <div class="accordion-body" style="background-color: black;">
+                                                <p><a href="#">Terms of use</a></p>
+                                                <p><a href="#">License Agreement </a></p>
+                                                <p><a href="#">Privacy Policy</a></p>
+                                                <p><a href="#">Copyright information</a></p>
+                                                <p><a href="#">Cookies policy</a></p>
+                                                <p><a href="#">Cookies Settings</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item" style="border: 1px solid black;">
+                                        <h2 class="accordion-header " id="4foot" >
+                                            <button class="accordion-button" style="background-color: black; color: white;" type="button" data-bs-toggle="collapse" data-bs-target="#supp" aria-expanded="true" aria-controls="supp">
+                                                SUPPORT
+                                            </button>
+                                        </h2>
+                                        <div class="collapse accordion-collapse" id="supp" aria-labelledby="4foot" data-bs-parent="#accfoot">
+                                            <div class="accordion-body" style="background-color: black;">
+                                                <p><a href="#">FAQ</a></p>
+                                                <p><a href="#">Search Guide </a></p>
+                                                <p><a href="#">Contact</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <br>
+                                <div class="mt-4 text-light" >
+                                    <div class="text-center">
+                                        <P class="h5 mb-3">SOCIAL MEDIA</p>
+                                    </div>
+                                    <div class="row justify-content-center g-2">
+                                       <div class="col-1">
+                                        <a href="#"><img src="images/facebook.png" alt="" class="img-fluid"></a>
+                                       </div>
+                                       <div class="col-1">
+                                        <a href="#"><img src="images/Twitter.png" alt="" class="img-fluid"></a>
+                                       </div>
+                                       <div class="col-1">
+                                        <a href="#"><img src="images/pinterest.png" alt="" class="img-fluid"></a>
+                                       </div>
+                                       <div class="col-1">
+                                        <a href="#"><img src="images/instagram.png" alt="" class="img-fluid"></a>
+                                       </div>
+                                    </div>
+
+                                    <div class="row justify-content-center g-2 mt-1">
+                                        <div class="col-1">
+                                         <a href="#"><img src="images/youtube.png" alt="" class="img-fluid"></a>
+                                        </div>
+                                        <div class="col-1">
+                                         <a href="#"><img src="images/linkedin.png" alt="" class="img-fluid"></a>
+                                        </div>
+                                        <div class="col-1">
+                                         <a href="#"><img src="images/discord.png" alt="" class="img-fluid"></a>
+                                        </div>
+                                        <div class="col-1">
+                                         <a href="#"><img src="images/reddit.png" alt="" class="img-fluid"></a>
+                                        </div>
+                                     </div>
+                                     <p class="text-center mt-5">Get exclusive assets sent straight to your inbox</p>
+                                     <br>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+                        <!-- wide screen topfoot -->
+                        <div class="row d-none d-md-flex text-center">
+                            <div class="col-md-6 col-lg-3">
+                                <div>
+                                    <p class="text-light h5">TOOLS</p>
+                                    <p><a href="#" class="text-secondary text-decoration-none">Ai Image Generator</a></p>
+                                    <p><a href="#"class="text-secondary text-decoration-none">Ai Video Generator</a></p>
+                                    <p><a href="#"class="text-secondary text-decoration-none">Image upscaler</a></p>
+                                    <p><a href="#"class="text-secondary text-decoration-none">Background Remover</a></p>
+                                    <p><a href="#"class="text-secondary text-decoration-none">Photo editor</a></p>
+                                    <p><a href="#"class="text-secondary text-decoration-none">All Freepik tools</a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div>
+                                    <p class="text-light h5">INFORMATIONS</p>
+                                    <p><a href="#"class="text-secondary text-decoration-none">Pricing</a></p>
+                                    <p><a href="#"class="text-secondary text-decoration-none">About us</a></p>
+                                    <p><a href="#"class="text-secondary text-decoration-none">API</a></p>
+                                    <p><a href="#"class="text-secondary text-decoration-none">Jobs</a></p>
+                                    <p><a href="#"class="text-secondary text-decoration-none">Sell content</a></p>
+                                    <p><a href="#"class="text-secondary text-decoration-none">Freepik brand guidelines</a></p>
+                                    <p><a href="#"class="text-secondary text-decoration-none">Events</a></p>
+                                    <p><a href="#"class="text-secondary text-decoration-none">Search trends</a></p>
+                                    <p><a href="#"class="text-secondary text-decoration-none">Blog</a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="mb-5">
+                                    <p class="text-light h5">LEGAL</p>
+                                    <p><a href="#"class="text-secondary text-decoration-none">Terms of use</a></p>
+                                    <p><a href="#"class="text-secondary text-decoration-none">License Agreement </a></p>
+                                    <p><a href="#"class="text-secondary text-decoration-none">Privacy Policy</a></p>
+                                    <p><a href="#"class="text-secondary text-decoration-none">Copyright information</a></p>
+                                    <p><a href="#"class="text-secondary text-decoration-none">Cookies policy</a></p>
+                                    <p><a href="#"class="text-secondary text-decoration-none">Cookies Settings</a></p>
+                                </div>
+
+                                <div>
+                                    <p class="text-light h5">SUPPORT</p>
+                                    <p><a href="#"class="text-secondary text-decoration-none">FAQ</a></p>
+                                    <p><a href="#"class="text-secondary text-decoration-none">Search Guide </a></p>
+                                    <p><a href="#"class="text-secondary text-decoration-none">Contact</a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div>
+                                    <div class="mt-4 text-light" >
+                                        <div class="text-center">
+                                            <P class="h5 mb-3">SOCIAL MEDIA</p>
+                                        </div>
+                                        <div class="row justify-content-center g-2">
+                                           <div class="col-1">
+                                            <a href="#"><img src="images/facebook.png" alt="" class="img-fluid"></a>
+                                           </div>
+                                           <div class="col-1">
+                                            <a href="#"><img src="images/Twitter.png" alt="" class="img-fluid"></a>
+                                           </div>
+                                           <div class="col-1">
+                                            <a href="#"><img src="images/pinterest.png" alt="" class="img-fluid"></a>
+                                           </div>
+                                           <div class="col-1">
+                                            <a href="#"><img src="images/instagram.png" alt="" class="img-fluid"></a>
+                                           </div>
+                                        </div>
+    
+                                        <div class="row justify-content-center g-2 mt-1">
+                                            <div class="col-1">
+                                             <a href="#"><img src="images/youtube.png" alt="" class="img-fluid"></a>
+                                            </div>
+                                            <div class="col-1">
+                                             <a href="#"><img src="images/linkedin.png" alt="" class="img-fluid"></a>
+                                            </div>
+                                            <div class="col-1">
+                                             <a href="#"><img src="images/discord.png" alt="" class="img-fluid"></a>
+                                            </div>
+                                            <div class="col-1">
+                                             <a href="#"><img src="images/reddit.png" alt="" class="img-fluid"></a>
+                                            </div>
+                                         </div>
+                                         <p class="text-center mt-5">Get exclusive assets sent straight to your inbox</p>
+                                         <br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <hr style="color: white;" class="my-3"> 
+                        <div class=" text-light">
+                            <div class="row d-md-none">
+                                <div class="col">
+                                    <!-- dropdown -->
+                                    <div class="dropdown text-center mb-3">
+                                        <button class="btn btn-outline-secondary dropdown-toggle px-4 py-2 fw-bold text-light" style="border: 3px solid white;" type="button" id="book-dropdown" data-bs-toggle="dropdown">
+                                            English
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="book-dropdown">
+                                            <li><a href="#" class="dropdown-item">French</a></li>
+                                            <li><a href="#" class="dropdown-item">Spanish</a></li>
+                                            <li><a href="#" class="dropdown-item">German</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="text-center">
+                                        <img src="images/freepik.png" alt="" width="30%">
+                                        <p class="mt-1">Copyright &copy; 2010-2024 Freepik Company S.L. All rights reserved.</p>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                            <div class="row d-none d-md-flex justify-content-around">
+                                <div class="col-8 ">
+                                    <div class="text">
+                                        <img src="images/freepik.png" alt="" class="img-fluid">
+                                        <p class="mt-1">Copyright &copy; 2010-2024 Freepik Company S.L. All rights reserved.</p>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <!-- dropdown -->
+                                    <div class="dropdown text-center mb-3">
+                                        <button class="btn btn-lg btn-outline-secondary dropdown-toggle px-4 py-2 fw-bold text-light" style="border: 3px solid white;" type="button" id="book-dropdown" data-bs-toggle="dropdown">
+                                            English
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="book-dropdown">
+                                            <li><a href="#" class="dropdown-item">French</a></li>
+                                            <li><a href="#" class="dropdown-item">Spanish</a></li>
+                                            <li><a href="#" class="dropdown-item">German</a></li>
+                                        </ul>
+                                    </div>                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="background-color: #363737;" class="py-2">
+                        <div class="container ">
+                            <div class="row">
+                                <div class="col-12 col-md-5">
+                                    <div class="text-center text-secondary">
+                                        <p>Freepik Company Projects</p>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="row justify-content-center text-center mx-2">
+                                        <div class="col">
+                                            <a href="#" style="text-decoration: none;" class="text-secondary">Freepik</a>
+                                        </div>
+                                        <div class="col">
+                                            <a href="#" style="text-decoration: none; color: white;" class="text-secondary">Flaticon</a>
+                                        </div>
+                                        <div class="col">
+                                            <a href="#" style="text-decoration: none; color: white;" class="text-secondary">Slidesgo</a>
+                                        </div>
+                                        <div class="col">
+                                            <a href="#" style="text-decoration: none; color: white;" class="text-secondary">Wepik</a>
+                                        </div>
+                                        <div class="col">
+                                            <a href="#" style="text-decoration: none; color: white;" class="text-secondary"> Videvo</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</html>
