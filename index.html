@@ -40,13 +40,13 @@
                             </li>
                         </ul>
                         <ul class="navbar-nav">
-                            <li class="nav-item">
+                            <li class="nav-item  d-md-none">
                                 <a href="#pricing" class="nav-link">Pricing</a>
                             </li>
                         </ul>
                         <ul class="navbar-nav">
-                            <li class="nav-item ">
-                                <a href="login.html" class="nav-link btn bg-secondary text-light px-3 ">LOG IN</a>
+                            <li class="nav-item d-none d-md-inline">
+                                <a href="#pricing" class="nav-link btn bg-secondary text-light px-3 ">LOG IN</a>
                             </li>
                         </ul>
                     </div>
@@ -87,7 +87,8 @@
                     
                 </div>
                 <div class="offcanvas-body">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed velit ab error cumque vel optio amet illum atque necessitatibus rem voluptates soluta dolor quisquam, ipsum deleniti ea nihil, in impedit.</p>
+                    <p>If you're ready to take your skills to the next level, check out my other books! Dive deeper into advanced web development topics with the Dev-Ninja Pro series, where we explore complex frameworks, optimization techniques, and cutting-edge development practices. </p>
+                        <p>Perfect for those looking to refine their craft and become true web development experts. Don’t miss out on mastering the next stage of your journey—grab your copy now!</p>
 
                      <!-- dropdown -->
                      <div class="dropdown">
@@ -121,8 +122,8 @@
                                 <h4 class="card-title">Starter Edition</h4>
                                 <p class="lead">eBook download only</p>
                                 <p class="text-primary display-5 fw-bold">$12.99</p>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolor tenetur adipisci, qui distinctio quibusdam!</p>
-                                <a href="#" class="btn btn-primary mt-3 "> Buy Now</a>
+                                <p class="card-text">This book provides a step-by-step guide to web development, covering HTML, CSS, JavaScript, data storage, and authentication.</p>
+                                <button class="btn btn-primary" data-bs-target="#stamodal" data-bs-toggle="modal" >BUY NOW</button>
                             </div>
                         </div>
                     </div>
@@ -135,7 +136,7 @@
                                 <h4 class="card-title">Standard Edition</h4>
                                 <p class="lead">eBook download & all Updates</p>
                                 <p class="text-primary display-5 fw-bold">$18.99</p>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolor tenetur adipisci, qui distinctio quibusdam!</p>
+                                <p class="card-text">This book provides a step-by-step guide to web development, covering HTML, CSS, JavaScript, data storage, and authentication.</p>
                                 <button class="btn btn-primary" data-bs-target="#semodal" data-bs-toggle="modal" >BUY NOW</button>
                                 
                             </div>
@@ -149,8 +150,8 @@
                                 <h4 class="card-title">Ultimate Edition</h4>
                                 <p class="lead">eBook download & all Benefits</p>
                                 <p class="text-primary display-5 fw-bold">$24.99</p>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolor tenetur adipisci, qui distinctio quibusdam!</p>
-                                <a href="#" class="btn btn-primary mt-3 "> Buy Now</a>
+                                <p class="card-text">This book provides a step-by-step guide to web development, covering HTML, CSS, JavaScript, data storage, and authentication.</p>
+                                <button class="btn btn-primary" data-bs-target="#uemodal" data-bs-toggle="modal" >BUY NOW</button>
                             </div>
                         </div>
                     </div>
@@ -160,8 +161,8 @@
         </section>
 
 
-        <!-- Standard Edition Modal -->
-         <div class="modal" id="semodal" aria-hidden="true" aria-labelledby="modal-title" tabindex="-1">
+        <!-- Starter Edition Payment -->
+        <div class="modal" id="stamodal" aria-hidden="true" aria-labelledby="modal-title" tabindex="-1">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -204,7 +205,7 @@
                                                     <p class="fw-bold">Month-to-month billing</p>
                                                 </div>
                                                 <div class="col text-end">
-                                                    <p style="font-size: 130%;">15.00 EUR/Month</p>
+                                                    <p style="font-size: 130%;">12.99 USD/Month</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -246,7 +247,7 @@
                                             <p class="fw-bold text-muted">Charged Today</p>
                                         </div>
                                         <div class="col text-end">
-                                            <p style="font-size: 130%;" class="fw-bold">15.00 EUR</p>
+                                            <p style="font-size: 130%;" class="fw-bold">12.99 USD</p>
                                         </div>
                                     </div>
                                     <div class=" text-center">
@@ -263,7 +264,222 @@
                     </div>
                 </div>
             </div>
-         </div>
+        </div>
+        <!-- End of Starter Edition Payment -->
+
+
+        <!-- Standard Edition Payment -->
+        <div class="modal" id="semodal" aria-hidden="true" aria-labelledby="modal-title" tabindex="-1">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row py-3 ">
+                            <div class="col-11 col-lg-6 px-5">
+                                <h3>Get Premium</h3>
+                                <br>
+                                <div style="display: flex;">
+                                    <p class="me-2">Monthly</p>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                        <label class="form-check-label" for="flexSwitchCheckDefault">Annual</label>
+                                    </div>
+                                </div> 
+                                <h4>Payment Method</h4> 
+                                <br><br><br>
+
+                                <a href="#" class="text-decoration-none fw-bold fst-italic">Buying as a company?</a>
+                            </div>
+                            <div class="col-11 col-lg-6 pe-5">
+                                <div class="bg-light px-4 pt-4">
+                                    <div class="" style="font-size: 80%;">
+                                        <p class="fw-bold my-2">With Premium you get</p>
+                                        <p class="fw-bold my-2"><span class="text-success"><i class="bi bi-check-lg"></i></span> All Premium stock content</p>
+                                        <p class=" my-2"><span class="text-success"><i class="bi bi-check-lg"></i></span> Unlimited Downloads</p>
+                                        <p class=" my-2"><span class="text-success"><i class="bi bi-check-lg"></i></span> No attribution required</p>
+                                        <p class=" fw-bold my-2"><span class="text-success"><i class="bi bi-check-lg"></i></span> 18000 credits/month for AI creation and editing</p>
+                                        <p class=" my-2"><span class="text-success"><i class="bi bi-check-lg"></i></span> Commercial AI license     </p>
+                                        <p class=" my-2"><span class="text-success"><i class="bi bi-check-lg"></i></span> User-friendly online design tools</p>
+
+                                        <div class="mt-4">
+                                            <p class="fw-bold">Number of users</p>
+                                        </div>
+                                        <div class="mt-4">
+                                            <div class="row justify-content-around">
+                                                <div class="col">
+                                                    <p class="fw-bold">Month-to-month billing</p>
+                                                </div>
+                                                <div class="col text-end">
+                                                    <p style="font-size: 130%;">18.99 USD/Month</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                  </div>
+                                    
+
+
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="accordion" id="payp">
+                                                <div class="accordion-item" style="border: 1px solid black;">
+                                                    <h2 class="accordion-header" id="1pay">
+                                                        <button class="accordion-button bg-light text-primary fw-bold" style="font-size:40%;" type="button" data-bs-toggle="collapse" data-bs-target="#sep" aria-expanded="true" aria-controls="sep">
+                                                           Add a promo code
+                                                        </button>
+                                                    </h2>
+                                                    <div class="collapse accordion-collapse" id="sep" aria-labelledby="1pay" data-bs-parent="#payp">
+                                                        <div class="accordion-body" >
+                                                           <div class="">
+                                                            <div class="row g-1">
+                                                                <div class="col-9">
+                                                                    <input type="text" name="pcode" id="pcode" required class="form-control ">
+                                                                </div>
+                                                                <div class="col-3">
+                                                                    <input type="submit" value="Apply" class="form-control  btn btn-secondary">
+                                                                </div>
+                                                            </div>
+                                                           </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>    
+                                        </div>  
+                                    </div>
+
+                                    <hr>
+                                    <div class="row justify-content-around">
+                                        <div class="col">
+                                            <p class="fw-bold text-muted">Charged Today</p>
+                                        </div>
+                                        <div class="col text-end">
+                                            <p style="font-size: 130%;" class="fw-bold">18.99 USD</p>
+                                        </div>
+                                    </div>
+                                    <div class=" text-center">
+                                        <button class="btn btn-primary my-3 py-2 px-5" type="submit"><i class="bi bi-lock-fill"></i>Confirm and Pay</button>
+    
+                                    </div>
+                                   
+                                    <p style="font-size: 80%;">By clicking "Confirm and pay" you agree to our <a href="" class="text-decoration-none fw-bold">Terms of use.</a>  <br>    
+                                      <span class="fw-bold">Automatic monthly renewal: </span>  Your subscription will automatically renew every month <br>for a single payment of 15.00 EUR. <br>
+                                       <span class="fw-bold">Cancel:</span>  You can cancel your renewal anytime from <a href="" class="text-decoration-none fw-bold">Subscription > Plan.</a> </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Standard Edition Payment -->
+
+
+         <!-- Ultimate Edition Payment -->
+         <div class="modal" id="uemodal" aria-hidden="true" aria-labelledby="modal-title" tabindex="-1">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row py-3 ">
+                            <div class="col-11 col-lg-6 px-5">
+                                <h3>Get Premium</h3>
+                                <br>
+                                <div style="display: flex;">
+                                    <p class="me-2">Monthly</p>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                        <label class="form-check-label" for="flexSwitchCheckDefault">Annual</label>
+                                    </div>
+                                </div> 
+                                <h4>Payment Method</h4> 
+                                <br><br><br>
+
+                                <a href="#" class="text-decoration-none fw-bold fst-italic">Buying as a company?</a>
+                            </div>
+                            <div class="col-11 col-lg-6 pe-5">
+                                <div class="bg-light px-4 pt-4">
+                                    <div class="" style="font-size: 80%;">
+                                        <p class="fw-bold my-2">With Premium you get</p>
+                                        <p class="fw-bold my-2"><span class="text-success"><i class="bi bi-check-lg"></i></span> All Premium stock content</p>
+                                        <p class=" my-2"><span class="text-success"><i class="bi bi-check-lg"></i></span> Unlimited Downloads</p>
+                                        <p class=" my-2"><span class="text-success"><i class="bi bi-check-lg"></i></span> No attribution required</p>
+                                        <p class=" fw-bold my-2"><span class="text-success"><i class="bi bi-check-lg"></i></span> 18000 credits/month for AI creation and editing</p>
+                                        <p class=" my-2"><span class="text-success"><i class="bi bi-check-lg"></i></span> Commercial AI license     </p>
+                                        <p class=" my-2"><span class="text-success"><i class="bi bi-check-lg"></i></span> User-friendly online design tools</p>
+
+                                        <div class="mt-4">
+                                            <p class="fw-bold">Number of users</p>
+                                        </div>
+                                        <div class="mt-4">
+                                            <div class="row justify-content-around">
+                                                <div class="col">
+                                                    <p class="fw-bold">Month-to-month billing</p>
+                                                </div>
+                                                <div class="col text-end">
+                                                    <p style="font-size: 130%;">18.99 USD/Month</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                  </div>
+                                    
+
+
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="accordion" id="payp">
+                                                <div class="accordion-item" style="border: 1px solid black;">
+                                                    <h2 class="accordion-header" id="1pay">
+                                                        <button class="accordion-button bg-light text-primary fw-bold" style="font-size:40%;" type="button" data-bs-toggle="collapse" data-bs-target="#sep" aria-expanded="true" aria-controls="sep">
+                                                           Add a promo code
+                                                        </button>
+                                                    </h2>
+                                                    <div class="collapse accordion-collapse" id="sep" aria-labelledby="1pay" data-bs-parent="#payp">
+                                                        <div class="accordion-body" >
+                                                           <div class="">
+                                                            <div class="row g-1">
+                                                                <div class="col-9">
+                                                                    <input type="text" name="pcode" id="pcode" required class="form-control ">
+                                                                </div>
+                                                                <div class="col-3">
+                                                                    <input type="submit" value="Apply" class="form-control  btn btn-secondary">
+                                                                </div>
+                                                            </div>
+                                                           </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>    
+                                        </div>  
+                                    </div>
+
+                                    <hr>
+                                    <div class="row justify-content-around">
+                                        <div class="col">
+                                            <p class="fw-bold text-muted">Charged Today</p>
+                                        </div>
+                                        <div class="col text-end">
+                                            <p style="font-size: 130%;" class="fw-bold">24.99 USD</p>
+                                        </div>
+                                    </div>
+                                    <div class=" text-center">
+                                        <button class="btn btn-primary my-3 py-2 px-5" type="submit"><i class="bi bi-lock-fill"></i>Confirm and Pay</button>
+    
+                                    </div>
+                                   
+                                    <p style="font-size: 80%;">By clicking "Confirm and pay" you agree to our <a href="" class="text-decoration-none fw-bold">Terms of use.</a>  <br>    
+                                      <span class="fw-bold">Automatic monthly renewal: </span>  Your subscription will automatically renew every month <br>for a single payment of 15.00 EUR. <br>
+                                       <span class="fw-bold">Cancel:</span>  You can cancel your renewal anytime from <a href="" class="text-decoration-none fw-bold">Subscription > Plan.</a> </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Ultimate Edition Payment -->
 
     <!-- about the book -->
         <section id="topic">
@@ -288,8 +504,9 @@
                                 </h2>
                                 <div id="chapter-1" class="collapse accordion-collapse" aria-labelledby="heading-1" data-bs-parent="#chapters">
                                     <div class="accordion-body">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quod, assumenda veniam facilis neque architecto doloremque. Earum neque distinctio quas ducimus? Reiciendis nulla voluptatibus voluptate aut illum minima nisi molestiae.</p>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus neque dignissimos non ab natus reiciendis deleniti! Sapiente minus nostrum dolorem veniam in vitae inventore consectetur dolorum itaque? Magni, nemo ipsam.</p>
+                                        <p>In this chapter, you'll take your very first steps into the world of web development by creating a basic web page using HTML. The chapter begins with an introduction to the structure of an HTML document, explaining elements like <html>, <head>, and <body>. You'll learn how to write and organize content using essential tags like headings, paragraphs, and lists. </p>
+                                        <p>By the end of the chapter, you’ll have created your first fully functional HTML web page, giving you a solid foundation to build on as you move forward. This is where your journey as a web developer truly begins!</p>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -303,8 +520,8 @@
                                 </h2>
                                 <div id="chapter-2" class="collapse accordion-collapse" aria-labelledby="heading-2" data-bs-parent="#chapters">
                                     <div class="accordion-body">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quod, assumenda veniam facilis neque architecto doloremque. Earum neque distinctio quas ducimus? Reiciendis nulla voluptatibus voluptate aut illum minima nisi molestiae.</p>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus neque dignissimos non ab natus reiciendis deleniti! Sapiente minus nostrum dolorem veniam in vitae inventore consectetur dolorum itaque? Magni, nemo ipsam.</p>
+                                        <p>This chapter dives into the world of CSS, where you'll learn how to style and transform the web pages you've created. It starts by explaining how to link an external CSS file to your HTML document, before covering the essential concepts such as selectors, properties, and values. You’ll explore how to manipulate text, colors, margins, padding, and layout techniques. The chapter also introduces the box model and explains how it impacts page design. </p>
+                                        <p>By the end of this chapter, you’ll have the skills to create visually appealing, well-structured web pages that look great on any device. This chapter is all about making your websites not just functional, but beautiful and user-friendly.</p>
                                     </div>
                                 </div>
                             </div>
@@ -318,8 +535,8 @@
                                 </h2>
                                 <div id="chapter-3" class="collapse accordion-collapse" aria-labelledby="heading-3" data-bs-parent="#chapters">
                                     <div class="accordion-body">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quod, assumenda veniam facilis neque architecto doloremque. Earum neque distinctio quas ducimus? Reiciendis nulla voluptatibus voluptate aut illum minima nisi molestiae.</p>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus neque dignissimos non ab natus reiciendis deleniti! Sapiente minus nostrum dolorem veniam in vitae inventore consectetur dolorum itaque? Magni, nemo ipsam.</p>
+                                        <p>In this chapter, you’ll unlock the full potential of your web pages by adding interactivity through JavaScript. You’ll start with the basics—understanding variables, data types, and functions—before moving on to more complex concepts like loops, conditionals, and events. The chapter will guide you through how to manipulate HTML elements dynamically, allowing you to create interactive features like buttons, forms, and animations. You’ll also learn how to work with the DOM (Document Object Model) to change content and respond to user actions. </p>
+                                        <p>By the end of this chapter, you'll be able to make your web pages come alive and respond to user input, making your sites more engaging and functional. JavaScript is the magic behind much of what you see on the web, and this chapter will show you how to harness its power!</p>
                                     </div>
                                 </div>
                             </div>
@@ -333,8 +550,8 @@
                                 </h2>
                                 <div id="chapter-4" class="collapse accordion-collapse" aria-labelledby="heading-4" data-bs-parent="#chapters">
                                     <div class="accordion-body">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quod, assumenda veniam facilis neque architecto doloremque. Earum neque distinctio quas ducimus? Reiciendis nulla voluptatibus voluptate aut illum minima nisi molestiae.</p>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus neque dignissimos non ab natus reiciendis deleniti! Sapiente minus nostrum dolorem veniam in vitae inventore consectetur dolorum itaque? Magni, nemo ipsam.</p>
+                                        <p>In this chapter, you'll learn how to store and manage data on your web pages using JavaScript. The chapter begins with an introduction to variables and arrays, explaining how to hold and organize data. You’ll also dive into more advanced topics like objects and local storage, which allow you to store data persistently on the user’s browser. By the end of the chapter, you’ll be equipped to create interactive features like forms that save data, session data that persists across pages, and even user preferences that are remembered between visits. </p>
+                                        <p>This chapter will give you the tools to make your web applications more dynamic and personalized, opening up a whole new world of possibilities for your projects!</p>
                                     </div>
                                 </div>
                             </div>
@@ -348,8 +565,8 @@
                                 </h2>
                                 <div id="chapter-5" class="collapse accordion-collapse" aria-labelledby="heading-5" data-bs-parent="#chapters">
                                     <div class="accordion-body">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quod, assumenda veniam facilis neque architecto doloremque. Earum neque distinctio quas ducimus? Reiciendis nulla voluptatibus voluptate aut illum minima nisi molestiae.</p>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus neque dignissimos non ab natus reiciendis deleniti! Sapiente minus nostrum dolorem veniam in vitae inventore consectetur dolorum itaque? Magni, nemo ipsam.</p>
+                                        <p>In this chapter, you'll learn the fundamentals of securing your web applications by implementing user authentication. The chapter begins with an explanation of what authentication is and why it's crucial for any interactive website. You’ll cover how to create a simple login form, validate user input, and compare it to stored credentials. You'll also learn about cookies and sessions, which help keep users logged in across pages. As the chapter progresses, you’ll be introduced to basic concepts of password hashing and the importance of protecting sensitive data. </p>
+                                        <p>By the end of this chapter, you'll understand how to manage user access, ensuring only authorized individuals can interact with certain parts of your site, which is a critical skill for building secure web applications.</p>
                                     </div>
                                 </div>
                             </div>
@@ -382,7 +599,7 @@
                                         <i class="bi bi-star-fill"></i>
                                     </div>
                                     <h5>A must buy for every aspiring web-dev</h5>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dignissimos nam tempora ut vitae magni eius fuga, non nostrum obcaecati, repellat quis nulla dolore nihil quae nisi blanditiis? Quo, cum.</p>
+                                    <p>I just finished reading this book, and I can honestly say it’s a game-changer for anyone starting out in web development. It explains the basics HTML, CSS, JavaScript, and even frameworks in such a clear and simple way that it’s easy to follow, even if you’re completely new to this. What stood out to me were the practical projects at the end of each chapter—they weren’t just exercises; they felt like real-world challenges that helped me really understand what I was learning. If you’re unsure about getting this book, don’t overthink it, it’s 100% worth it. It’s more than a book; it’s like having a personal guide to web development!</p>
                                     <small class="fst-italic">Review by Olu</small>
                                 </div>
 
@@ -395,7 +612,8 @@
                                         <i class="bi bi-star"></i>
                                     </div>
                                     <h5>Every Man's Dream in a Book </h5>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dignissimos nam tempora ut vitae magni eius fuga, non nostrum obcaecati, repellat quis nulla dolore nihil quae nisi blanditiis? Quo, cum.</p>
+                                    <p>**Every Man's Dream in a Book**  
+                                        This book is honestly everything you could hope for as someone getting into web development. It breaks things down so well that even tricky concepts feel easy to understand. The step-by-step guides and examples really helped me connect the dots, and the exercises gave me the confidence to actually build things on my own. If you’re dreaming of becoming a web developer, this book is a great place to start. Trust me, you won’t regret picking it up!</p>
                                     <small class="fst-italic">Review by Oluwadarasimi</small>
                                 </div>
 
@@ -408,7 +626,7 @@
                                         <i class="bi bi-star"></i>
                                     </div>
                                     <h5>Don't Snooze or You Lose </h5>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dignissimos nam tempora ut vitae magni eius fuga, non nostrum obcaecati, repellat quis nulla dolore nihil quae nisi blanditiis? Quo, cum.</p>
+                                    <p>This book is a gem for anyone wanting to dive into web development! It’s practical, easy to follow, and packed with real-world examples that actually make sense. I’ve read it, and honestly, waiting to get it is just holding yourself back. It’s the kind of book that makes you excited to learn and build. Don’t sleep on this, every moment you hesitate is a missed opportunity to grow and improve!.</p>
                                     <small class="fst-italic">Review by Peniel</small>
                                 </div>
                             </div>
@@ -431,13 +649,13 @@
                             <label for="email" class="form-label">Email Address</label>
                             <div class="input-group mb-4">
                                 <span class="input-group-text"><i class="bi bi-envelope-at-fill"></i></span>
-                                <input type="email" id="email" name="email" placeholder="netninja@example.com" class="form-control">
+                                <input type="email" id="email" name="email" placeholder="devninja@example.com" class="form-control">
                             </div>
 
                             <label for="fullName" class="form-label">Full Name</label>
                             <div class="input-group mb-4">
                                 <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
-                                <input type="text" id="fullName" name="fullName" placeholder="Net Ninja" class="form-control">
+                                <input type="text" id="fullName" name="fullName" placeholder="Developer Ninja" class="form-control">
                             </div>
 
                             <label for="subject" class="form-label"> What is your Question About?</label>
@@ -476,8 +694,9 @@
 
                     <div class="row justify-content-center">
                         <div class="col-md-8 text-center">
-                            <p class="text-muted my-4">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa pariatur atque amet blanditiis ad? Repellendus deserunt expedita, beatae illo ipsum laborum harum architecto nostrum accusantium quas voluptatibus, ipsa fuga alias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, doloribus!
+                            <p class="text-muted my-2">
+                            
+                                Stay in the loop and never miss an update! Subscribe to our newsletter for the latest trends, tips, and exclusive resources in web development. By joining, you’ll receive valuable insights, tutorials, and announcements directly to your inbox, keeping you ahead of the curve. Don’t miss out—subscribe now and be part of our growing community!
                             </p>
                             <button class="btn btn-primary" data-bs-target="#reg-modal" data-bs-toggle="modal" >Register for Updates</button>
                         </div>
@@ -494,7 +713,7 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
                         </div>
                         <div class="modal-body">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, fugiat quasi! Necessitatibus culpa deserunt porro debitis ad eos, adipisci officia eaque magnam iure consequuntur repellat earum. Quo odit doloribus eos.</p>
+                            <p>Stay in the loop! Subscribe to our newsletter and get the latest updates, tips, and resources straight to your inbox. Don't miss out on valuable insights and exclusive content—join us today!</p>
                             <label for="modal-email" class="form-label">Your Email Address</label>
                             <input type="email" name="modal-email" id="modal-email" placeholder="netninja@example.com" class="form-control">
                         </div>
@@ -506,8 +725,16 @@
             </div>
 
 
-            <footer class="bg-secondary">
-                <p class="text-light py-2 text-center">&copy; Copyright 2022 DevNInja Pro-Book. All Right Reserved.</p>
+            <footer class="bg-secondary" >
+                <div class="container">
+                   <div class="row text-center pt-4">
+                    <div class="col text-light">
+                        <p>&copy;Copyright 2022 DevNInja Pro-Book. All Right Reserved</p>
+                        <p><em>Created by Oluwadarasimi A. AYANLAJA </em></p>
+                    </div>
+                   </div>
+                </div>
+                
             </footer> 
                 
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
