@@ -32,3 +32,41 @@ section{
     animation-range: entry 0% cover 40%;
 }
 
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-300px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.introText{
+    animation-name:slideInLeft ;
+    animation-duration:1s ;
+    animation-timing-function:ease-in ;
+    animation-delay: 0s ;
+    animation-iteration-count: 1;
+    animation-direction:normal ;
+    animation-fill-mode: none;
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(300px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.introPic{
+    animation-name:slideInRight ;
+    animation-duration:1s ;
+    animation-timing-function:ease-in ;
+    animation-delay: 0s ;
+    animation-iteration-count: 1;
+    animation-direction:normal ;
+    animation-fill-mode: none;
+}
+
